@@ -1,8 +1,18 @@
 {
     "name": "magros/laravel-model-encryption",
     "description": "",
-    "keywords": ["encrypt"],
+    "keywords": ["encrypt", "laravel", "laravel 5", "eloquent", "model"],
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Magros\\Encryptable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Marco Antonio Godinez",
@@ -10,10 +20,23 @@
         }
     ],
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.1",
+        "ext-openssl": "*",
+        "illuminate/database": "^5.7"
     },
     "require-dev": {
-        "phpunit/phpunit": "~6.0"
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.7"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Magros\\Encryptable\\EncryptServiceProvider"
+            ],
+            "dont-discover": [
+                "*"
+            ]
+        }
+    }
 }

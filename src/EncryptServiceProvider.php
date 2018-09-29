@@ -20,7 +20,8 @@ class EncryptServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                EncryptModel::class
+                EncryptModel::class,
+                DecryptModel::class
             ]);
         }
 

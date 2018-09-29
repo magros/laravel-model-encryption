@@ -148,4 +148,34 @@ class EncryptableTest extends TestCase {
         $this->assertFalse( $validator->fails() );
     }
 
+    /**
+     * @test
+     */
+    public function it_tests_that_empty_values_are_not_encrypted()
+    {
+        $user = $this->createUser(null,'example@email.com');
+        $raw = DB::table('test_users')->select('*')->first();
+        $this->assertEmpty($raw->name);
+        $this->assertEmpty($user->name);
+    }
+
+
+    /**
+    * @test
+    */
+    public function it_test_that_decrypt_command_is_working()
+    {
+        TestUser::$enableEncryption = false;
+
+        $user = $this->createUser();
+
+        $this->artisan('encryptable:encryptModel', ['model' => TestUser::class]);
+        $this->artisan('encryptable:decryptModel', ['model' => TestUser::class]);
+        $raw = DB::table('test_users')->select('*')->first();
+
+        $this->assertEquals($user->email, $raw->email);
+        $this->assertEquals($user->name, $raw->name);
+
+        TestUser::$enableEncryption = true;
+    }
 }

@@ -48,7 +48,7 @@ trait Encryptable
      */
     public function decryptAttribute($value)
     {
-       return $this->encrypter()->decrypt($value);
+       return $value ? $this->encrypter()->decrypt($value) : '';
     }
 
 
@@ -59,7 +59,7 @@ trait Encryptable
      */
     public function encryptAttribute($value)
     {
-        return $this->encrypter()->encrypt($value);
+        return $value ? $this->encrypter()->encrypt($value) : '';
     }
 
     /**

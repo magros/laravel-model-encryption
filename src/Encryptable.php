@@ -1,58 +1,29 @@
 <?php namespace Magros\Encryptable;
 
-use Illuminate\Support\Facades\Config;
-
 trait Encryptable
 {
 
     public $aesKey = null;
-    public $isEncrypted = true;
-    private $prefix;
+    public static $enableEncryption = true;
+    private $encrypter;
 
-    public function getPrefix()
+    /**
+     * @return Encrypter
+     */
+    public function encrypter()
     {
-        if(! $this->prefix){
-            $this->prefix = Config::get('encrypt.prefix');
+        if(! $this->encrypter){
+            $this->encrypter = new Encrypter();
         }
-        return $this->prefix;
+        return $this->encrypter;
     }
 
-    public function getEncryptable()
+    /**
+     * @return mixed
+     */
+    public function getEncryptableAttributes()
     {
         return $this->encryptable;
-    }
-
-    /**
-     * @param $val
-     * @param $key
-     * @return string
-     */
-    public function aesEncrypt($val, $key)
-    {
-        return openssl_encrypt($val, 'aes-128-ecb', $key, 0, $iv = '');
-    }
-
-    /**
-     * @param $val
-     * @param $key
-     * @return string
-     */
-    public function aesDecrypt($val, $key)
-    {
-        return openssl_decrypt($val, 'aes-128-ecb', $key, 0, $iv = '');
-    }
-
-    /**
-     * @return bool|null|string
-     * @throws \Exception
-     */
-    public function getAescryptKey()
-    {
-        if ($this->aesKey === null) {
-            if(! Config::get('encrypt.key')) throw new \Exception('The .env value ENCRYPT_KEY has to be set!!');
-            $this->aesKey = substr(hash('sha256', Config::get('encrypt.key')), 0, 16);
-        }
-        return $this->aesKey;
     }
 
     /**
@@ -61,7 +32,7 @@ trait Encryptable
      */
     public function encryptable($key)
     {
-        if($this->isEncrypted){
+        if(self::$enableEncryption){
             return in_array($key, $this->encryptable);
         }
         return false;
@@ -77,11 +48,7 @@ trait Encryptable
      */
     public function decryptAttribute($value)
     {
-        $value = str_replace("{$this->getPrefix()}_",'',$value);
-
-        $value = $this->aesDecrypt($value,$this->getAescryptKey());
-
-        return $value;
+       return $this->encrypter()->decrypt($value);
     }
 
 
@@ -92,9 +59,7 @@ trait Encryptable
      */
     public function encryptAttribute($value)
     {
-        $value = $this->aesEncrypt($value, $this->getAescryptKey());
-
-        return "{$this->getPrefix()}_{$value}";
+        return $this->encrypter()->encrypt($value);
     }
 
     /**

@@ -35,72 +35,72 @@ class EncryptModel extends Command
      */
     public function handle()
     {
-//        $class = $this->argument('model');
-//        $this->model = $this->guardClass($class);
-//        $this->attributes = $this->model->getEncryptable();
-//        $table = $this->model->getTable();
-//        $total = $this->model->where('encrypted', 0)->count();
-//
-//        if($total > 0){
-//            $this->comment($total.' records will be encrypted');
-//            $bar = $this->output->createProgressBar($total);
-//            $bar->setFormat('%current%/%max% [%bar%] %percent:3s%% %elapsed:6s%/%estimated:-6s% %memory:6s%');
-//
-//            $this->model->orderBy('id', 'asc')->where('encrypted', 0)->chunk(100, function ($records) use ($table, $bar) {
-//                foreach ($records as $record) {
-//                    $record->timestamps = false;
-//                    $attributes = $this->getEncryptedAttributes($record);
-//                    DB::table($table)->where('id', $record->id)->update($attributes);
-//                    $bar->advance();
-//                    $record = null;
-//                    $attributes = null;
-//                }
-//                $records = null;
-//                gc_collect_cycles();
-//            });
-//
-//            $bar->finish();
-//        }
-//
-//        $this->comment('Finished encryption');
+        $class = $this->argument('model');
+        $this->model = $this->guardClass($class);
+        $this->attributes = $this->model->getEncryptableAttributes();
+        $table = $this->model->getTable();
+        $total = $this->model->where('encrypted', 0)->count();
+        $this->model::$enableEncryption = false;
+
+        if($total > 0){
+            $this->comment($total.' records will be encrypted');
+            $bar = $this->output->createProgressBar($total);
+            $bar->setFormat('%current%/%max% [%bar%] %percent:3s%% %elapsed:6s%/%estimated:-6s% %memory:6s%');
+
+            $this->model->orderBy('id', 'asc')->where('encrypted', 0)->chunk(100, function ($records) use ($table, $bar) {
+                foreach ($records as $record) {
+                    $record->timestamps = false;
+                    $attributes = $this->getEncryptedAttributes($record);
+                    DB::table($table)->where('id', $record->id)->update($attributes);
+                    $bar->advance();
+                    $record = null;
+                    $attributes = null;
+                }
+                $records = null;
+                gc_collect_cycles();
+            });
+
+            $bar->finish();
+        }
+
+        $this->comment('Finished encryption');
     }
 
-//    private function getEncryptedAttributes($record)
-//    {
-//        $record->isEncrypted = false;
-//        $encryptedFields = ['encrypted' => 1];
-//
-//        foreach ($this->attributes as $attribute) {
-//            $raw = $record->{$attribute};
-//            if (!empty($raw) && !str_contains($raw, $record->prefix)) {
-//                $encryptedFields[$attribute] = $this->model->encryptAttribute($raw);
-//            }
-//        }
-//        return $encryptedFields;
-//    }
-//
-//    private function validateHasEncryptedColumn($model)
-//    {
-//        $table = $model->getTable();
-//        if (! Schema::hasColumn($table, 'encrypted')) {
-//            $this->comment('Creating encrypted column');
-//            Schema::table($table, function (Blueprint $table) {
-//                $table->tinyInteger('encrypted')->default(0);
-//            });
-//        }
-//    }
-//
-//    /**
-//     * @param $class
-//     * @return Model
-//     * @throws \Exception
-//     */
-//    public function guardClass($class)
-//    {
-//        if (!class_exists($class))
-//            throw new \Exception("Class {$class} does not exists");
-//        $model = new $class();
-//        $this->validateHasEncryptedColumn($model);
-//        return $model;
-//    }
+    private function getEncryptedAttributes($record)
+    {
+        $encryptedFields = ['encrypted' => 1];
+
+        foreach ($this->attributes as $attribute) {
+            $raw = $record->{$attribute};
+            if (!empty($raw) && !str_contains($raw, $record->prefix)) {
+                $encryptedFields[$attribute] = $this->model->encryptAttribute($raw);
+            }
+        }
+        return $encryptedFields;
+    }
+
+    private function validateHasEncryptedColumn($model)
+    {
+        $table = $model->getTable();
+        if (! Schema::hasColumn($table, 'encrypted')) {
+            $this->comment('Creating encrypted column');
+            Schema::table($table, function (Blueprint $table) {
+                $table->tinyInteger('encrypted')->default(0);
+            });
+        }
+    }
+
+    /**
+     * @param $class
+     * @return Model
+     * @throws \Exception
+     */
+    public function guardClass($class)
+    {
+        if (!class_exists($class))
+            throw new \Exception("Class {$class} does not exists");
+        $model = new $class();
+        $this->validateHasEncryptedColumn($model);
+        return $model;
+    }
 }

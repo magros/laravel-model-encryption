@@ -31,7 +31,7 @@ class EncryptableQueryBuilder extends Builder {
     {
         if ($this->model->encryptable($column)) {
             list($value, $operator) = $this->prepareValueAndOperator($value, $operator, func_num_args() === 2);
-            $value = $this->model->getPrefix(). '_' .$this->model->aesEncrypt($value, $this->model->getAescryptKey());
+            $value = $this->model->encryptAttribute($value);
         }
         parent::where($column, $operator, $value, $boolean);
     }

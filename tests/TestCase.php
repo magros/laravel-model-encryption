@@ -1,6 +1,7 @@
 <?php
+
 namespace Tests;
-use Illuminate\Contracts\Console\Kernel;
+
 use Magros\Encryptable\EncryptServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
@@ -18,55 +19,27 @@ class TestCase extends BaseTestCase
     }
 
     /**
-     * Define environment setup.
-     *
-     * @param  \Illuminate\Foundation\Application  $app
-     * @return void
-     */
-    protected function getEnvironmentSetUp($app)
-    {
-        $app['config']->set('database.default', 'testbench');
-        $app['config']->set('database.connections.testbench', [
-            'driver'   => 'sqlite',
-            'database' => ':memory:',
-            'prefix'   => '',
-        ]);
-    }
-
-    /**
      * Set up the test case.
      *
      */
     function setUp()
     {
         parent::setUp();
-        $this->loadLaravelMigrations();
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
+        $this->withFactories(__DIR__ . '/database/factories');
     }
 
-
-//    /**
-//     * Resolve application Console Kernel implementation.
-//     *
-//     * @param  \Illuminate\Foundation\Application  $app
-//     * @return void
-//     */
-//    protected function resolveApplicationConsoleKernel($app)
-//    {
-//        $app->singleton('Illuminate\Contracts\Console\Kernel', \Tests\Kernel::class);
-//    }
-
-    /**
-     * Create a test user.
-     *
-     * @param $name
-     * @param $email
-     * @return User
-     */
-    public function createUser($name, $email)
+    public function createUserWithPhone($name = 'Jhon Doe', $email = 'jhon@doe.com', $phone_number = '123465789') : TestUser
     {
-        $password = bcrypt('test');
+        $user = $this->createUser($name, $email);
 
-        return User::create(compact('name', 'email', 'password'));
+        $user->phones()->create(compact('phone_number'));
+
+        return $user->load('phones');
     }
 
+    public function createUser($name = 'Jhon Doe', $email = 'jhon@doe.com') : TestUser
+    {
+        return factory(TestUser::class)->create(compact('name', 'email'));
+    }
 }

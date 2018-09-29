@@ -2,6 +2,7 @@
   <dictionary name="marco">
     <words>
       <w>encryptable</w>
+      <w>encrypter</w>
     </words>
   </dictionary>
 </component>

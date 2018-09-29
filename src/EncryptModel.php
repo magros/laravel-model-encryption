@@ -47,19 +47,15 @@ class EncryptModel extends Command
             $bar = $this->output->createProgressBar($total);
             $bar->setFormat('%current%/%max% [%bar%] %percent:3s%% %elapsed:6s%/%estimated:-6s% %memory:6s%');
 
-            $this->model->orderBy('id', 'asc')->where('encrypted', 0)->chunk(100, function ($records) use ($table, $bar) {
-                foreach ($records as $record) {
-                    $record->timestamps = false;
-                    $attributes = $this->getEncryptedAttributes($record);
-                    DB::table($table)->where('id', $record->id)->update($attributes);
-                    $bar->advance();
-                    $record = null;
-                    $attributes = null;
-                }
-                $records = null;
-                gc_collect_cycles();
-            });
-
+            $records =  $this->model->orderBy('id', 'asc')->where('encrypted', 0)->get();
+            foreach ($records as $record) {
+                $record->timestamps = false;
+                $attributes = $this->getEncryptedAttributes($record);
+                DB::table($table)->where('id', $record->id)->update($attributes);
+                $bar->advance();
+                $record = null;
+                $attributes = null;
+            }
             $bar->finish();
         }
 

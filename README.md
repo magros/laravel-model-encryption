@@ -75,6 +75,6 @@ Publish configuration file, this will creates config/encrypt.php
    ```php      
    $validator = User::where('email','foo@bar.com')->first();
    ```
-   Automatically foo@bar.com will be encrypted and pass it to the query builder.
+   Automatically 'foo@bar.com' will be encrypted and pass it to the query builder.
    
 

@@ -13,9 +13,9 @@ Add ServiceProvider to your app/config.php file
         \Magros\Encryptable\EncryptServiceProvider::class,
     ],
 ```
-Publish configuration file, this will creates config/encrypt.php
+Publish configuration file, this will create config/encrypt.php 
 ```bash
-    php artisan publish:vendor Magros\Encryptable\EncryptServiceProvider 
+     php artisan vendor:publish --provider=Magros\Encryptable\EncryptServiceProvider
 ``` 
 
 ## How to use
@@ -59,19 +59,20 @@ Publish configuration file, this will creates config/encrypt.php
     ```
 5. Optional. Encrypt your current data
 
-    If you have current data in your database you can encrypt it with the current command:
+    If you have current data in your database you can encrypt it with the:
     ```bash
     php artisan encryptable:encryptModel 'App\User'
     ``` 
-    Aditional you can decrypt it using
+    Additionally you can decrypt it using the:
     ```bash
     php artisan encryptable:decryptModel 'App\User'
     ```
+    Note: You must implement first the `Encryptable` trait and set `$encryptable` attributes
 6. If you are using exists and unique rules with encrypted values replace it with exists_encrypted and unique_encrypted 
     ```php      
    $validator = validator(['email'=>'foo@bar.com'], ['email'=>'exists_encrypted:users,email']);
     ```
-7. You can still using where eloquent functions 
+7. You can still use `where` functions 
    ```php      
    $validator = User::where('email','foo@bar.com')->first();
    ```

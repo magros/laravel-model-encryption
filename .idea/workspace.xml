@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5171e4e4-fa26-4229-827c-d332abf363ca" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DecryptModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EncryptModel.php" afterPath="$PROJECT_DIR$/src/EncryptModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EncryptServiceProvider.php" afterPath="$PROJECT_DIR$/src/EncryptServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Encryptable.php" afterPath="$PROJECT_DIR$/src/Encryptable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/EncryptableTest.php" afterPath="$PROJECT_DIR$/tests/EncryptableTest.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-model-encryption.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-model-encryption.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,17 +19,18 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="16" />
           <entry key="lock" value="1" />
-          <entry key="md" value="1" />
-          <entry key="php" value="226" />
+          <entry key="md" value="4" />
+          <entry key="php" value="231" />
           <entry key="save" value="1" />
           <entry key="xml" value="8" />
         </counts>
@@ -42,8 +38,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="17" />
-          <entry key="Markdown" value="1" />
-          <entry key="PHP" value="226" />
+          <entry key="Markdown" value="4" />
+          <entry key="PHP" value="231" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="8" />
         </counts>
@@ -51,6 +47,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="82" />
+          <entry key="md" value="803" />
           <entry key="php" value="837" />
           <entry key="xml" value="47" />
         </counts>
@@ -58,7 +55,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="82" />
-          <entry key="PHP" value="837" />
+          <entry key="Markdown" value="802" />
+          <entry key="PHP" value="838" />
           <entry key="XML" value="47" />
         </counts>
       </usages-collector>
@@ -73,12 +71,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EncryptableTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/EncryptableTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="157" column="23" lean-forward="true" selection-start-line="157" selection-start-column="23" selection-end-line="157" selection-end-column="23" />
-              <folding />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="520">
+                <caret line="77" column="3" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="79" />
+                <folding>
+                  <element signature="e#28#67#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -96,6 +99,7 @@
       <find>aesDecrypt</find>
       <find>getKey</find>
       <find>getEncryptable</find>
+      <find>exists_en</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/EncryptModel.php" />
         <option value="$PROJECT_DIR$/src/DecryptModel.php" />
         <option value="$PROJECT_DIR$/tests/EncryptableTest.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -155,7 +160,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
@@ -227,53 +232,37 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="452" />
+    <option name="x" value="51" />
     <option name="y" value="-4" />
-    <option name="width" value="1859" />
-    <option name="height" value="1068" />
+    <option name="width" value="1315" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="laravel-model-encryption" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-model-encryption" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="laravel-model-encryption" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="laravel-model-encryption" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-model-encryption" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-model-encryption" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-model-encryption" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="laravel-model-encryption" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Encr&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/src/Encryptable.php&#10;encryptAttribute&#9;null&#9;null&#10;Buil&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/src/EncryptableQueryBuilder.php&#10;compo&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/composer.json&#10;compos&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/composer.json&#10;Illuminate\Foundation\Application&#9;null&#9;null&#10;Orchestra\Testbench\Console\Kernel&#9;null&#9;null&#10;WithLaravelMigrations&#9;null&#9;null&#10;Illuminate\Contracts\Console\Kernel&#9;null&#9;null&#10;TrusP&#9;null&#9;null&#10;users_&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/vendor/orchestra/testbench-core/laravel/migrations/2014_10_12_000000_create_users_table.php" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/README.md&#10;Encr&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/src/Encryptable.php&#10;encryptAttribute&#9;null&#9;null&#10;Buil&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/src/EncryptableQueryBuilder.php&#10;compo&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/composer.json&#10;compos&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/composer.json&#10;Illuminate\Foundation\Application&#9;null&#9;null&#10;Orchestra\Testbench\Console\Kernel&#9;null&#9;null&#10;WithLaravelMigrations&#9;null&#9;null&#10;Illuminate\Contracts\Console\Kernel&#9;null&#9;null&#10;TrusP&#9;null&#9;null&#10;users_&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/vendor/orchestra/testbench-core/laravel/migrations/2014_10_12_000000_create_users_table.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -304,9 +293,6 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -325,35 +311,38 @@
       <workItem from="1538248184714" duration="3146000" />
       <workItem from="1538256175870" duration="687000" />
       <workItem from="1538258771543" duration="1121000" />
+      <workItem from="1538503054424" duration="974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27829000" />
+    <option name="totallyTimeSpent" value="28803000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
+    <frame x="51" y="-4" width="1315" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34836286" sideWeight="0.49272552" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53928226" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30220076" sideWeight="0.5072745" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49272552" weight="0.35460994" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Gulp" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.5072745" side_tool="true" weight="0.30220076" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297769" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297769" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="8" weight="0.32925585" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.53928226" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,72 +351,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/EncryptableTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4030">
-          <caret line="155" column="38" lean-forward="false" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EncryptModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="49" column="58" lean-forward="false" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/EncryptableTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3744">
-          <caret line="145" column="39" lean-forward="false" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EncryptModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1898">
-          <caret line="77" column="47" lean-forward="false" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EncryptModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Framework/CustomEncryptionModel.php" />
     <entry file="file://$PROJECT_DIR$/autoload.php" />
     <entry file="file://$PROJECT_DIR$/vendor/illuminate/support/Facades/Config.php" />
     <entry file="file://$PROJECT_DIR$/vendor/orchestra/testbench-core/src/Concerns/CreatesApplication.php" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/orchestra/testbench-core/laravel/migrations/2014_10_12_000000_create_users_table.php" />
     <entry file="file://$PROJECT_DIR$/vendor/orchestra/testbench-core/src/Http/Middleware/TrustProxies.php" />
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Console/Kernel.php" />
@@ -446,20 +374,14 @@
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <marker date="1537885740000" expanded="true" signature="49:511" ph=" @method static \Illuminate\Contracts\Validation\Validator make(array $data, array $rules, array $messages = [], array $customAttributes = []) ..." />
-            <marker date="1537885740000" expanded="true" signature="544:732" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="554:638" ph=" Get the registered name of the component. ..." />
-            <marker date="1537885740000" expanded="true" signature="690:730" ph="{...}" />
-          </folding>
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/orchestra/testbench-core/src/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1024">
-          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -473,7 +395,7 @@
     <entry file="file://$PROJECT_DIR$/vendor/orchestra/testbench-core/src/Concerns/WithFactories.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -483,384 +405,84 @@
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="486" column="13" lean-forward="false" selection-start-line="486" selection-start-column="13" selection-end-line="486" selection-end-column="13" />
-          <folding>
-            <marker date="1537885740000" expanded="false" signature="11:979" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1014:1792" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1022:1437" ph=" Throw an HttpException with the given data. ..." />
-            <marker date="1537885740000" expanded="true" signature="1501:1791" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="1548:1609" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1650:1734" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1831:2402" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1839:2232" ph=" Throw an HttpException with the given data if the given condition is true. ..." />
-            <marker date="1537885740000" expanded="true" signature="2309:2401" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="2339:2394" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="2445:3026" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="2453:2850" ph=" Throw an HttpException with the given data unless the given condition is true. ..." />
-            <marker date="1537885740000" expanded="true" signature="2931:3025" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="2963:3018" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="3063:3401" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="3071:3257" ph=" Generate the URL to a controller action. ..." />
-            <marker date="1537885740000" expanded="true" signature="3322:3400" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="3435:3860" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="3443:3625" ph=" Get the available container instance. ..." />
-            <marker date="1537885740000" expanded="true" signature="3686:3859" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="3726:3780" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="3899:4139" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="3907:4018" ph=" Get the path to the application folder. ..." />
-            <marker date="1537885740000" expanded="true" signature="4054:4138" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="4175:4436" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="4183:4329" ph=" Generate an asset path for the application. ..." />
-            <marker date="1537885740000" expanded="true" signature="4373:4435" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="4471:4880" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="4479:4691" ph=" Get the available auth instance. ..." />
-            <marker date="1537885740000" expanded="true" signature="4726:4879" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="4763:4816" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="4915:5292" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="4923:5142" ph=" Create a new redirect response to the previous location. ..." />
-            <marker date="1537885740000" expanded="true" signature="5211:5291" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="5332:5580" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="5340:5452" ph=" Get the path to the base of the install. ..." />
-            <marker date="1537885740000" expanded="true" signature="5489:5579" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="5617:5907" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="5625:5779" ph=" Hash the given value against the bcrypt algorithm. ..." />
-            <marker date="1537885740000" expanded="true" signature="5824:5906" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="5947:6208" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="5955:6095" ph=" Begin broadcasting an event. ..." />
-            <marker date="1537885740000" expanded="true" signature="6135:6207" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="6244:7266" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="6252:6535" ph=" Get / set the specified cache value. ..." />
-            <marker date="1537885740000" expanded="true" signature="6558:7265" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="6636:6678" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="6720:6782" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="6825:6980" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="7020:7166" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="7303:7867" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="7311:7591" ph=" Get / set the specified configuration value. ..." />
-            <marker date="1537885740000" expanded="true" signature="7643:7866" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="7678:7721" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="7753:7807" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="7909:8155" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="7917:8016" ph=" Get the configuration path. ..." />
-            <marker date="1537885740000" expanded="true" signature="8055:8154" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="8192:9005" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="8200:8607" ph=" Create a new cookie instance. ..." />
-            <marker date="1537885740000" expanded="true" signature="8769:9004" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="8851:8888" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="9046:9290" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="9054:9154" ph=" Generate a CSRF token form field. ..." />
-            <marker date="1537885740000" expanded="true" signature="9182:9289" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="9331:9678" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="9339:9447" ph=" Get the CSRF token value. ..." />
-            <marker date="1537885740000" expanded="true" signature="9475:9677" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="9548:9595" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="9722:9921" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="9730:9824" ph=" Get the database path. ..." />
-            <marker date="1537885740000" expanded="true" signature="9865:9920" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="9959:10227" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="9967:10098" ph=" Decrypt the given value. ..." />
-            <marker date="1537885740000" expanded="true" signature="10150:10226" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="10266:10507" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="10274:10422" ph=" Dispatch a job to its appropriate handler. ..." />
-            <marker date="1537885740000" expanded="true" signature="10452:10506" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="10550:10859" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="10558:10727" ph=" Dispatch a command to its appropriate handler in the current process. ..." />
-            <marker date="1537885740000" expanded="true" signature="10778:10858" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="10896:11946" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="10904:11103" ph=" Get the path to a versioned Elixir file. ..." />
-            <marker date="1537885740000" expanded="true" signature="11159:11945" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="11296:11551" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="11406:11541" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="11628:11709" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="11796:11846" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="11984:12246" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="11992:12121" ph=" Encrypt the given value. ..." />
-            <marker date="1537885740000" expanded="true" signature="12171:12245" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="12282:12567" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="12290:12473" ph=" Dispatch an event and call the listeners. ..." />
-            <marker date="1537885740000" expanded="true" signature="12504:12566" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="12605:13283" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="12613:12833" ph=" Create a model factory builder for a given class, name, and amount. ..." />
-            <marker date="1537885740000" expanded="true" signature="12858:13282" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="13016:13118" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="13151:13230" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="13318:13569" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="13326:13465" ph=" Write some information to the log. ..." />
-            <marker date="1537885740000" expanded="true" signature="13510:13568" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="13606:13979" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="13614:13777" ph=" Log a debug message to the logs. ..." />
-            <marker date="1537885740000" expanded="true" signature="13837:13978" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="13876:13916" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="14014:14283" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="14022:14167" ph=" Get a log driver instance. ..." />
-            <marker date="1537885740000" expanded="true" signature="14203:14282" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="14326:14632" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="14334:14491" ph=" Generate a form field to spoof the HTTP verb used by forms. ..." />
-            <marker date="1537885740000" expanded="true" signature="14528:14631" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="14666:16307" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="14674:14889" ph=" Get the path to a versioned Mix file. ..." />
-            <marker date="1537885740000" expanded="true" signature="14940:16306" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="15024:15065" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="15147:15214" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="15283:15589" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="15435:15516" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="15720:15958" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="15768:15854" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="16049:16230" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="16177:16220" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="16341:16584" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="16349:16507" ph=" Create a new Carbon instance for the current time. ..." />
-            <marker date="1537885740000" expanded="true" signature="16538:16583" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="16618:16869" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="16626:16755" ph=" Retrieve an old input item. ..." />
-            <marker date="1537885740000" expanded="true" signature="16804:16868" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="16906:17179" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="16914:17081" ph=" Get a policy instance for a given class. ..." />
-            <marker date="1537885740000" expanded="true" signature="17111:17178" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="17221:17502" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="17229:17335" ph=" Get the path to the public folder. ..." />
-            <marker date="1537885740000" expanded="true" signature="17374:17501" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="17541:18049" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="17549:17810" ph=" Get an instance of the redirector. ..." />
-            <marker date="1537885740000" expanded="true" signature="17892:18048" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="17926:17971" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="18086:18467" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="18094:18193" ph=" Report an exception. ..." />
-            <marker date="1537885740000" expanded="true" signature="18227:18466" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="18329:18400" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="18505:19061" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="18513:18726" ph=" Get an instance of the current request or an input item from the request. ..." />
-            <marker date="1537885740000" expanded="true" signature="18779:19060" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="18814:18858" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="18890:18946" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="19098:19488" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="19106:19268" ph=" Catch a potential exception and return a default value. ..." />
-            <marker date="1537885740000" expanded="true" signature="19326:19487" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="19346:19387" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="19411:19480" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="19526:19712" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="19534:19642" ph=" Resolve a service from the container. ..." />
-            <marker date="1537885740000" expanded="true" signature="19672:19711" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="19756:19970" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="19764:19873" ph=" Get the path to the resources folder. ..." />
-            <marker date="1537885740000" expanded="true" signature="19914:19969" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="20009:20570" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="20017:20296" ph=" Return a new response from the application. ..." />
-            <marker date="1537885740000" expanded="true" signature="20371:20569" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="20463:20501" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="20606:20933" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="20614:20791" ph=" Generate the URL to a named route. ..." />
-            <marker date="1537885740000" expanded="true" signature="20855:20932" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="20976:21182" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="20984:21099" ph=" Generate an asset path for the application. ..." />
-            <marker date="1537885740000" expanded="true" signature="21134:21181" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="21223:21489" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="21231:21379" ph=" Generate a HTTPS url for the application. ..." />
-            <marker date="1537885740000" expanded="true" signature="21430:21488" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="21527:22120" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="21535:21840" ph=" Get / set the specified session value. ..." />
-            <marker date="1537885740000" expanded="true" signature="21893:22119" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="21928:21972" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="22004:22059" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="22163:22411" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="22171:22278" ph=" Get the path to the storage folder. ..." />
-            <marker date="1537885740000" expanded="true" signature="22318:22410" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="22447:22694" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="22455:22613" ph=" Create a new Carbon instance for the current date. ..." />
-            <marker date="1537885740000" expanded="true" signature="22646:22693" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="22730:23178" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="22738:22956" ph=" Translate the given message. ..." />
-            <marker date="1537885740000" expanded="true" signature="23021:23177" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="23056:23103" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="23221:23628" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="23229:23454" ph=" Translates the given message based on a count. ..." />
-            <marker date="1537885740000" expanded="true" signature="23534:23627" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="23661:23981" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="23669:23841" ph=" Translate the given message. ..." />
-            <marker date="1537885740000" expanded="true" signature="23896:23980" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="24015:24479" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="24023:24239" ph=" Generate a url for the application. ..." />
-            <marker date="1537885740000" expanded="true" signature="24306:24478" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="24342:24396" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="24519:25139" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="24527:24808" ph=" Create a new Validator instance. ..." />
-            <marker date="1537885740000" expanded="true" signature="24922:25138" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="25016:25054" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="25174:25673" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="25182:25418" ph=" Get the evaluated view contents for the given view. ..." />
-            <marker date="1537885740000" expanded="true" signature="25481:25672" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="25569:25607" ph="..." />
-          </folding>
+          <caret line="486" column="13" selection-start-line="486" selection-start-column="13" selection-end-line="486" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="175" column="20" lean-forward="false" selection-start-line="175" selection-start-column="20" selection-end-line="175" selection-end-column="20" />
+          <caret line="175" column="20" selection-start-line="175" selection-start-column="20" selection-end-line="175" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/database/factories/ModelFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/database/migrations/2018_09_29_000002_create_test_phones_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/openssl/openssl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="655">
-          <caret line="696" column="55" lean-forward="false" selection-start-line="696" selection-start-column="55" selection-end-line="696" selection-end-column="55" />
-          <folding>
-            <marker date="1501701706649" expanded="true" signature="34:235" ph=" Frees a private key ..." />
-            <marker date="1501701706649" expanded="true" signature="279:732" ph=" Generates a new private key ..." />
-            <marker date="1501701706649" expanded="true" signature="795:1433" ph=" Gets an exportable representation of a key into a string ..." />
-            <marker date="1501701706649" expanded="true" signature="1532:2233" ph=" Gets an exportable representation of a key into a file ..." />
-            <marker date="1501701706649" expanded="true" signature="2347:3065" ph=" Get a private key ..." />
-            <marker date="1501701706649" expanded="true" signature="3134:3761" ph=" Extract public key from certificate and prepare it for use ..." />
-            <marker date="1501701706649" expanded="true" signature="3819:4528" ph=" Returns an array with the key details ..." />
-            <marker date="1501701706649" expanded="true" signature="4579:4747" ph=" Free key resource ..." />
-            <marker date="1501701706649" expanded="true" signature="4801:5540" ph=" Alias of &lt;b&gt;openssl_pkey_get_private&lt;/b&gt; ..." />
-            <marker date="1501701706649" expanded="true" signature="5602:6213" ph=" Alias of &lt;b&gt;openssl_pkey_get_public&lt;/b&gt; ..." />
-            <marker date="1501701706649" expanded="true" signature="6269:7022" ph=" Generate a new signed public key and challenge ..." />
-            <marker date="1501701706649" expanded="true" signature="7099:7369" ph=" Verifies a signed public key and challenge ..." />
-            <marker date="1501701706649" expanded="true" signature="7417:7749" ph=" Exports the challenge assoicated with a signed public key and challenge ..." />
-            <marker date="1501701706649" expanded="true" signature="7809:8140" ph=" Exports a valid PEM formatted public key signed public key and challenge ..." />
-            <marker date="1501701706649" expanded="true" signature="8189:8460" ph=" Parse an X.509 certificate and return a resource identifier for ..." />
-            <marker date="1501701706649" expanded="true" signature="8513:8684" ph=" @param string $x509 ..." />
-            <marker date="1501701706649" expanded="true" signature="8750:8921" ph=" Free certificate resource ..." />
-            <marker date="1501701706649" expanded="true" signature="8970:9605" ph=" Parse an X509 certificate and return the information as an array ..." />
-            <marker date="1501701706649" expanded="true" signature="9675:11630" ph=" Verifies if a certificate can be used for a particular purpose ..." />
-            <marker date="1501701706649" expanded="true" signature="11742:12125" ph=" Checks if a private key corresponds to a certificate ..." />
-            <marker date="1501701706649" expanded="true" signature="12189:12538" ph=" Exports a certificate as a string ..." />
-            <marker date="1501701706649" expanded="true" signature="12611:12958" ph=" Exports a certificate to file ..." />
-            <marker date="1501701706649" expanded="true" signature="13043:13553" ph=" Exports a PKCS##12 Compatible Certificate Store File to variable. ..." />
-            <marker date="1501701706649" expanded="true" signature="13647:14142" ph=" Exports a PKCS##12 Compatible Certificate Store File ..." />
-            <marker date="1501701706649" expanded="true" signature="14248:14645" ph=" Parse a PKCS##12 Certificate Store into an array ..." />
-            <marker date="1501701706649" expanded="true" signature="14716:17662" ph=" Generates a CSR ..." />
-            <marker date="1501701706649" expanded="true" signature="17774:18062" ph=" Exports a CSR as a string ..." />
-            <marker date="1501701706649" expanded="true" signature="18130:18472" ph=" Exports a CSR to a file ..." />
-            <marker date="1501701706649" expanded="true" signature="18555:19826" ph=" Sign a CSR with another certificate (or itself) and generate a certificate ..." />
-            <marker date="1501701706649" expanded="true" signature="19935:20137" ph=" Returns the subject of a CERT ..." />
-            <marker date="1501701706649" expanded="true" signature="20211:20422" ph=" Returns the public key of a CERT ..." />
-            <marker date="1501701706649" expanded="true" signature="20499:20931" ph=" Computes a digest ..." />
-            <marker date="1501701706649" expanded="true" signature="21003:21939" ph=" Encrypts data ..." />
-            <marker date="1501701706649" expanded="true" signature="22064:22896" ph=" Decrypts data ..." />
-            <marker date="1501701706649" expanded="true" signature="23006:23259" ph=" (PHP 5 &amp;gt;= PHP 5.3.3)&lt;br/&gt; ..." />
-            <marker date="1501701706649" expanded="true" signature="23313:23766" ph=" Generate signature ..." />
-            <marker date="1501701706649" expanded="true" signature="23869:24264" ph=" Verify signature ..." />
-            <marker date="1501701706649" expanded="true" signature="24367:24818" ph=" Seal (encrypt) data ..." />
-            <marker date="1501701706649" expanded="true" signature="24927:25332" ph=" Open sealed data ..." />
-            <marker date="1501701706649" expanded="true" signature="25432:25780" ph=" Generates a PKCS5 v2 PBKDF2 string, defaults to SHA-1 ..." />
-            <marker date="1501701706649" expanded="true" signature="25878:27317" ph=" Verifies the signature of an S/MIME signed message ..." />
-            <marker date="1501701706649" expanded="true" signature="27457:27870" ph=" Decrypts an S/MIME encrypted message ..." />
-            <marker date="1501701706649" expanded="true" signature="27969:28880" ph=" Sign an S/MIME message ..." />
-            <marker date="1501701706649" expanded="true" signature="29028:29913" ph=" Encrypt an S/MIME message ..." />
-            <marker date="1501701706649" expanded="true" signature="30050:30451" ph=" Encrypts data with private key ..." />
-            <marker date="1501701706649" expanded="true" signature="30553:31130" ph=" Decrypts data with private key ..." />
-            <marker date="1501701706649" expanded="true" signature="31234:31796" ph=" Encrypts data with public key ..." />
-            <marker date="1501701706649" expanded="true" signature="31897:32399" ph=" Decrypts data with public key ..." />
-            <marker date="1501701706649" expanded="true" signature="32502:32807" ph=" Gets available digest methods ..." />
-            <marker date="1501701706649" expanded="true" signature="32868:33177" ph=" Gets available cipher methods ..." />
-            <marker date="1501701706649" expanded="true" signature="33242:33620" ph=" (No version information available, might only be in SVN)&lt;br/&gt; ..." />
-            <marker date="1501701706649" expanded="true" signature="33682:34654" ph=" Generates a string of pseudo-random bytes, with the number of bytes determined by the length parameter. ..." />
-            <marker date="1501701706649" expanded="true" signature="34735:34955" ph=" Return openSSL error message ..." />
-            <marker date="1501701706649" expanded="true" signature="34998:35205" ph=" Retrieve the available certificate locations ..." />
-            <marker date="1501701706649" expanded="true" signature="35672:35812" ph=" Used as default algorithm by &lt;b&gt;openssl_sign&lt;/b&gt; and ..." />
-            <marker date="1501701706649" expanded="true" signature="36156:36603" ph=" When signing a message, use cleartext signing with the MIME ..." />
-            <marker date="1501701706649" expanded="true" signature="36641:36941" ph=" Adds text/plain content type headers to encrypted/signed ..." />
-            <marker date="1501701706649" expanded="true" signature="36974:37371" ph=" When verifying a message, certificates (if ..." />
-            <marker date="1501701706649" expanded="true" signature="37409:37532" ph=" Do not verify the signers certificate of a signed ..." />
-            <marker date="1501701706649" expanded="true" signature="37570:37760" ph=" Do not chain verification of signers certificates: that is ..." />
-            <marker date="1501701706649" expanded="true" signature="37796:38184" ph=" When signing a message the signer's certificate is normally ..." />
-            <marker date="1501701706649" expanded="true" signature="38220:38466" ph=" Normally when a message is signed, a set of attributes are ..." />
-            <marker date="1501701706649" expanded="true" signature="38503:38858" ph=" Normally the input message is converted to &quot;canonical&quot; format ..." />
-            <marker date="1501701706649" expanded="true" signature="38895:39005" ph=" Don't try and verify the signatures on a message ..." />
-            <marker date="1501701706649" expanded="true" signature="39510:39612" ph=" Whether SNI support is available or not. ..." />
-            <marker date="1501701706649" expanded="true" signature="40052:40712" ph="..." />
-          </folding>
+          <caret line="696" column="55" selection-start-line="696" selection-start-column="55" selection-end-line="696" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/database/migrations/2018_09_29_000001_create_test_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="806">
-          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/TestUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/TestPhone.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding>
-            <marker date="1537885740000" expanded="false" signature="62:184" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="212:1725" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="222:309" ph=" Indicates if the console output should be mocked. ..." />
-            <marker date="1537885740000" expanded="true" signature="358:430" ph=" All of the expected output lines. ..." />
-            <marker date="1537885740000" expanded="true" signature="474:543" ph=" All of the expected questions. ..." />
-            <marker date="1537885740000" expanded="true" signature="590:779" ph=" Call artisan command and return code. ..." />
-            <marker date="1537885740000" expanded="true" signature="837:1451" ph="{...}" />
-            <marker date="1537885740000" expanded="true" signature="885:969" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1014:1365" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1027:1364" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1078:1194" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1244:1354" ph="..." />
-            <marker date="1537885740000" expanded="true" signature="1460:1537" ph=" Disable mocking the console output. ..." />
-            <marker date="1537885740000" expanded="true" signature="1592:1723" ph="{...}" />
-          </folding>
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EncryptableQueryBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <marker date="1538248200116" expanded="false" signature="41:120" ph="..." />
-            <marker date="1538248200116" expanded="true" signature="169:1146" ph="..." />
-            <marker date="1538248200116" expanded="true" signature="199:328" ph=" EncryptableQueryBuilder constructor. ..." />
-            <marker date="1538248200116" expanded="true" signature="403:553" ph="{...}" />
-            <marker date="1538248200116" expanded="true" signature="562:751" ph=" @param array|\Closure|string $column ..." />
-            <marker date="1538248200116" expanded="true" signature="839:1145" ph="{...}" />
-            <marker date="1538248200116" expanded="true" signature="895:1077" ph="..." />
-          </folding>
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
-          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -868,54 +490,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding>
-            <marker date="1538235422770" expanded="true" signature="69:706" ph="..." />
-            <marker date="1538235422770" expanded="true" signature="383:516" ph="..." />
-            <marker date="1538235422770" expanded="true" signature="433:498" ph="..." />
-            <marker date="1538235422770" expanded="true" signature="526:695" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="40" />
-          <folding />
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config/encrypt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="35" />
-          <folding>
-            <marker date="1538226123757" expanded="true" signature="15:602" ph="..." />
-            <marker date="1538226123757" expanded="true" signature="23:253" ph="..." />
-            <marker date="1538226123757" expanded="true" signature="296:548" ph="..." />
-          </folding>
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/basic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="614">
-          <caret line="144" column="9" lean-forward="false" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
-          <folding>
-            <marker date="1501701706649" expanded="true" signature="10:1370" ph=" @deprecated 5.3.0 since 5.3.0 ..." />
-            <marker date="1501701706649" expanded="true" signature="1403:1637" ph=" Sets the process title ..." />
-            <marker date="1501701706649" expanded="true" signature="1687:1901" ph=" Returns the current process title ..." />
-            <marker date="1501701706649" expanded="true" signature="1945:2130" ph=" Reclaims memory used by the Zend Engine memory manager ..." />
-            <marker date="1501701706649" expanded="true" signature="2166:2711" ph=" Returns active resources ..." />
-            <marker date="1501701706649" expanded="true" signature="2753:3116" ph=" The full path and filename of the file. If used inside an include, ..." />
-            <marker date="1501701706649" expanded="true" signature="3154:3264" ph=" The current line number of the file. ..." />
-            <marker date="1501701706649" expanded="true" signature="3301:3771" ph=" The class name. (Added in PHP 4.3.0) As of PHP 5 this constant ..." />
-            <marker date="1501701706649" expanded="true" signature="3810:4059" ph=" The function name. (Added in PHP 4.3.0) As of PHP 5 this constant ..." />
-            <marker date="1501701706649" expanded="true" signature="4101:4286" ph=" The class method name. (Added in PHP 5.0.0) The method name is ..." />
-            <marker date="1501701706649" expanded="true" signature="4326:4614" ph=" The trait name. (Added in PHP 5.4.0) As of PHP 5.4 this constant ..." />
-            <marker date="1501701706649" expanded="true" signature="4653:4978" ph=" The directory of the file. If used inside an include, ..." />
-            <marker date="1501701706649" expanded="true" signature="5015:5222" ph=" The name of the current namespace (case-sensitive). This constant ..." />
-          </folding>
+          <caret line="144" column="9" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -923,156 +518,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="796">
           <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <marker date="1538240879894" expanded="false" signature="29:121" ph="..." />
-            <marker date="1538240879894" expanded="true" signature="158:1080" ph="{...}" />
-            <marker date="1538240879894" expanded="true" signature="168:263" ph=" Load the package service provider. ..." />
-            <marker date="1538240879894" expanded="true" signature="314:374" ph="{...}" />
-            <marker date="1538240879894" expanded="true" signature="383:425" ph=" Set up the test case. ..." />
-            <marker date="1538240879894" expanded="true" signature="448:617" ph="{...}" />
-            <marker date="1538240879894" expanded="true" signature="743:903" ph="{...}" />
-            <marker date="1538240879894" expanded="true" signature="991:1078" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EncryptServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <marker date="1538259488412" expanded="true" signature="41:153" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="207:1920" ph="{...}" />
-            <marker date="1538259488412" expanded="true" signature="217:489" ph=" Bootstrap the application services. ..." />
-            <marker date="1538259488412" expanded="true" signature="518:866" ph="{...}" />
-            <marker date="1538259488412" expanded="true" signature="570:698" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="599:687" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="600:686" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="726:822" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="727:811" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="875:950" ph=" Register the application services. ..." />
-            <marker date="1538259488412" expanded="true" signature="983:1071" ph="{...}" />
-            <marker date="1538259488412" expanded="true" signature="1111:1918" ph="{...}" />
-            <marker date="1538259488412" expanded="true" signature="1234:1364" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="1394:1637" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="1489:1636" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="1667:1910" ph="..." />
-            <marker date="1538259488412" expanded="true" signature="1762:1909" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Encrypter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-452">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <marker date="1538240350836" expanded="true" signature="91:1245" ph="{...}" />
-            <marker date="1538240350836" expanded="true" signature="178:227" ph=" @param $value ..." />
-            <marker date="1538240350836" expanded="true" signature="265:389" ph="{...}" />
-            <marker date="1538240350836" expanded="true" signature="398:447" ph=" @param $value ..." />
-            <marker date="1538240350836" expanded="true" signature="485:648" ph="{...}" />
-            <marker date="1538240350836" expanded="true" signature="658:722" ph=" @return bool|null|string ..." />
-            <marker date="1538240350836" expanded="true" signature="753:1032" ph="{...}" />
-            <marker date="1538240350836" expanded="true" signature="794:998" ph="..." />
-            <marker date="1538240350836" expanded="true" signature="1041:1068" ph=" @return mixed ..." />
-            <marker date="1538240350836" expanded="true" signature="1102:1242" ph="{...}" />
-            <marker date="1538240350836" expanded="true" signature="1137:1205" ph="..." />
-          </folding>
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Encryptable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <marker date="1538259089066" expanded="true" signature="54:2435" ph="{...}" />
-            <marker date="1538259089066" expanded="true" signature="161:192" ph=" @return Encrypter ..." />
-            <marker date="1538259089066" expanded="true" signature="226:361" ph="{...}" />
-            <marker date="1538259089066" expanded="true" signature="264:321" ph="..." />
-            <marker date="1538259089066" expanded="true" signature="370:397" ph=" @return mixed ..." />
-            <marker date="1538259089066" expanded="true" signature="446:493" ph="{...}" />
-            <marker date="1538259089066" expanded="true" signature="502:547" ph=" @param $key ..." />
-            <marker date="1538259089066" expanded="true" signature="587:723" ph="{...}" />
-            <marker date="1538259089066" expanded="true" signature="630:694" ph="..." />
-            <marker date="1538259089066" expanded="true" signature="732:845" ph=" Decrypt a value. ..." />
-            <marker date="1538259089066" expanded="true" signature="892:969" ph="{...}" />
-            <marker date="1538259089066" expanded="true" signature="979:1054" ph=" @param $value ..." />
-            <marker date="1538259089066" expanded="true" signature="1101:1179" ph="{...}" />
-            <marker date="1538259089066" expanded="true" signature="1188:1261" ph=" @param $key ..." />
-            <marker date="1538259089066" expanded="true" signature="1302:1489" ph="{...}" />
-            <marker date="1538259089066" expanded="true" signature="1394:1458" ph="..." />
-            <marker date="1538259089066" expanded="true" signature="1499:1592" ph=" @param $key ..." />
-            <marker date="1538259089066" expanded="true" signature="1641:1809" ph="{...}" />
-            <marker date="1538259089066" expanded="true" signature="1687:1750" ph="..." />
-            <marker date="1538259089066" expanded="true" signature="1819:1872" ph=" @return mixed ..." />
-            <marker date="1538259089066" expanded="true" signature="1919:2212" ph="{...}" />
-            <marker date="1538259089066" expanded="true" signature="2036:2176" ph="..." />
-            <marker date="1538259089066" expanded="true" signature="2080:2166" ph="..." />
-            <marker date="1538259089066" expanded="true" signature="2221:2266" ph=" @return EncryptableQueryBuilder ..." />
-            <marker date="1538259089066" expanded="true" signature="2310:2433" ph="{...}" />
-          </folding>
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EncryptModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
-          <caret line="70" column="50" lean-forward="false" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
-          <folding>
-            <marker date="1538259788314" expanded="false" signature="42:225" ph="..." />
-            <marker date="1538259788314" expanded="true" signature="261:3010" ph="{...}" />
-            <marker date="1538259788314" expanded="true" signature="271:357" ph=" The name and signature of the console command. ..." />
-            <marker date="1538259788314" expanded="true" signature="431:503" ph=" The console command description. ..." />
-            <marker date="1538259788314" expanded="true" signature="617:713" ph=" Execute the console command. ..." />
-            <marker date="1538259788314" expanded="true" signature="744:1869" ph="{...}" />
-            <marker date="1538259788314" expanded="true" signature="1093:1814" ph="..." />
-            <marker date="1538259788314" expanded="true" signature="1465:1776" ph="..." />
-            <marker date="1538259788314" expanded="true" signature="1923:2293" ph="{...}" />
-            <marker date="1538259788314" expanded="true" signature="2029:2253" ph="..." />
-            <marker date="1538259788314" expanded="true" signature="2145:2243" ph="..." />
-            <marker date="1538259788314" expanded="true" signature="2350:2664" ph="{...}" />
-            <marker date="1538259788314" expanded="true" signature="2449:2657" ph="..." />
-            <marker date="1538259788314" expanded="true" signature="2533:2646" ph="..." />
-            <marker date="1538259788314" expanded="true" signature="2570:2645" ph="..." />
-            <marker date="1538259788314" expanded="true" signature="2673:2747" ph=" @param $class ..." />
-            <marker date="1538259788314" expanded="true" signature="2788:3008" ph="{...}" />
-          </folding>
+          <caret line="70" column="50" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DecryptModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <marker date="1538259807162" expanded="false" signature="42:225" ph="..." />
-            <marker date="1538259807162" expanded="true" signature="261:3012" ph="{...}" />
-            <marker date="1538259807162" expanded="true" signature="271:357" ph=" The name and signature of the console command. ..." />
-            <marker date="1538259807162" expanded="true" signature="431:503" ph=" The console command description. ..." />
-            <marker date="1538259807162" expanded="true" signature="617:713" ph=" Execute the console command. ..." />
-            <marker date="1538259807162" expanded="true" signature="744:1869" ph="{...}" />
-            <marker date="1538259807162" expanded="true" signature="1093:1814" ph="..." />
-            <marker date="1538259807162" expanded="true" signature="1465:1776" ph="..." />
-            <marker date="1538259807162" expanded="true" signature="1923:2295" ph="{...}" />
-            <marker date="1538259807162" expanded="true" signature="2030:2255" ph="..." />
-            <marker date="1538259807162" expanded="true" signature="2146:2245" ph="..." />
-            <marker date="1538259807162" expanded="true" signature="2352:2666" ph="{...}" />
-            <marker date="1538259807162" expanded="true" signature="2451:2659" ph="..." />
-            <marker date="1538259807162" expanded="true" signature="2535:2648" ph="..." />
-            <marker date="1538259807162" expanded="true" signature="2572:2647" ph="..." />
-            <marker date="1538259807162" expanded="true" signature="2675:2749" ph=" @param $class ..." />
-            <marker date="1538259807162" expanded="true" signature="2790:3010" ph="{...}" />
-          </folding>
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EncryptServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/EncryptableTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="157" column="23" lean-forward="true" selection-start-line="157" selection-start-column="23" selection-end-line="157" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="328">
+          <caret line="100" selection-start-line="100" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="520">
+            <caret line="77" column="3" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="79" />
+            <folding>
+              <element signature="e#28#67#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

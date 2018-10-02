@@ -59,14 +59,10 @@ Publish configuration file, this will create config/encrypt.php
     ```
 5. Optional. Encrypt your current data
 
-    If you have current data in your database you can encrypt it with the:
-    ```bash
-    php artisan encryptable:encryptModel 'App\User'
-    ``` 
-    Additionally you can decrypt it using the:
-    ```bash
-    php artisan encryptable:decryptModel 'App\User'
-    ```
+    If you have current data in your database you can encrypt it with the: `php artisan encryptable:encryptModel 'App\User'` command.
+    
+    Additionally you can decrypt it using the:`php artisan encryptable:decryptModel 'App\User'` command.
+    
     Note: You must implement first the `Encryptable` trait and set `$encryptable` attributes
 6. If you are using exists and unique rules with encrypted values replace it with exists_encrypted and unique_encrypted 
     ```php      

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5171e4e4-fa26-4229-827c-d332abf363ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-model-encryption.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-model-encryption.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncryptableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EncryptableTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestPhone.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestPhone.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestUser.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,28 +22,28 @@
     <session id="1924430304">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="16" />
+          <entry key="json" value="17" />
           <entry key="lock" value="1" />
           <entry key="md" value="4" />
-          <entry key="php" value="231" />
+          <entry key="php" value="238" />
           <entry key="save" value="1" />
           <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="17" />
+          <entry key="JSON" value="18" />
           <entry key="Markdown" value="4" />
-          <entry key="PHP" value="231" />
+          <entry key="PHP" value="238" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="8" />
         </counts>
@@ -47,16 +51,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="82" />
-          <entry key="md" value="803" />
-          <entry key="php" value="837" />
+          <entry key="md" value="957" />
+          <entry key="php" value="851" />
           <entry key="xml" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="82" />
-          <entry key="Markdown" value="802" />
-          <entry key="PHP" value="838" />
+          <entry key="Markdown" value="956" />
+          <entry key="PHP" value="852" />
           <entry key="XML" value="47" />
         </counts>
       </usages-collector>
@@ -72,16 +76,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="520">
-                <caret line="77" column="3" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="79" />
-                <folding>
-                  <element signature="e#28#67#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -100,6 +98,7 @@
       <find>getKey</find>
       <find>getEncryptable</find>
       <find>exists_en</find>
+      <find>create</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,7 +119,6 @@
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Application.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
         <option value="$PROJECT_DIR$/tests/Kernel.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/ModelFactory.php" />
         <option value="$PROJECT_DIR$/tests/factories/ModelFactory.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
@@ -132,22 +130,23 @@
         <option value="$PROJECT_DIR$/tests/database/migrations/2018_09_29_000002_create_phones_tests_table.php" />
         <option value="$PROJECT_DIR$/tests/database/migrations/2018_09_29_000001_create_users_table.php" />
         <option value="$PROJECT_DIR$/tests/database/migrations/2018_09_29_000001_create_test_users_table.php" />
-        <option value="$PROJECT_DIR$/tests/TestUser.php" />
         <option value="$PROJECT_DIR$/tests/database/factories/ModelFactory.php" />
         <option value="$PROJECT_DIR$/tests/database/migrations/2018_09_29_000002_create_test_phones_table.php" />
-        <option value="$PROJECT_DIR$/tests/TestPhone.php" />
         <option value="$PROJECT_DIR$/src/Encrypter.php" />
         <option value="$PROJECT_DIR$/tests/models/TestPhone.php" />
         <option value="$PROJECT_DIR$/tests/models/TestUser.php" />
-        <option value="$PROJECT_DIR$/tests/TestCase.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/EncryptableQueryBuilder.php" />
         <option value="$PROJECT_DIR$/src/Encryptable.php" />
         <option value="$PROJECT_DIR$/src/EncryptServiceProvider.php" />
         <option value="$PROJECT_DIR$/src/EncryptModel.php" />
         <option value="$PROJECT_DIR$/src/DecryptModel.php" />
-        <option value="$PROJECT_DIR$/tests/EncryptableTest.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tests/TestCase.php" />
+        <option value="$PROJECT_DIR$/tests/TestPhone.php" />
+        <option value="$PROJECT_DIR$/tests/TestUser.php" />
+        <option value="$PROJECT_DIR$/tests/EncryptableTest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -255,6 +254,11 @@
               <item name="laravel-model-encryption" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="laravel-model-encryption" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-model-encryption" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -262,7 +266,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/README.md&#10;Encr&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/src/Encryptable.php&#10;encryptAttribute&#9;null&#9;null&#10;Buil&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/src/EncryptableQueryBuilder.php&#10;compo&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/composer.json&#10;compos&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/composer.json&#10;Illuminate\Foundation\Application&#9;null&#9;null&#10;Orchestra\Testbench\Console\Kernel&#9;null&#9;null&#10;WithLaravelMigrations&#9;null&#9;null&#10;Illuminate\Contracts\Console\Kernel&#9;null&#9;null&#10;TrusP&#9;null&#9;null&#10;users_&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/vendor/orchestra/testbench-core/laravel/migrations/2014_10_12_000000_create_users_table.php" />
+    <property name="SearchEverywhereHistoryKey" value="composer&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/composer.json&#10;Encr&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/src/Encryptable.php&#10;encryptAttribute&#9;null&#9;null&#10;Buil&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/src/EncryptableQueryBuilder.php&#10;compo&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/composer.json&#10;compos&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/composer.json&#10;Illuminate\Foundation\Application&#9;null&#9;null&#10;Orchestra\Testbench\Console\Kernel&#9;null&#9;null&#10;WithLaravelMigrations&#9;null&#9;null&#10;Illuminate\Contracts\Console\Kernel&#9;null&#9;null&#10;TrusP&#9;null&#9;null&#10;users_&#9;FILE&#9;file:///var/www/html/laravel-model-encryption/vendor/orchestra/testbench-core/laravel/migrations/2014_10_12_000000_create_users_table.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -311,23 +315,22 @@
       <workItem from="1538248184714" duration="3146000" />
       <workItem from="1538256175870" duration="687000" />
       <workItem from="1538258771543" duration="1121000" />
-      <workItem from="1538503054424" duration="974000" />
+      <workItem from="1538503054424" duration="2785000" />
+      <workItem from="1539283767377" duration="73000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28803000" />
+    <option name="totallyTimeSpent" value="30687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="-4" width="1315" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49272552" weight="0.35460994" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49272552" visible="true" weight="0.3609141" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5072745" side_tool="true" weight="0.30220076" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297769" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -339,6 +342,8 @@
       <window_info anchor="bottom" id="Command Line Tools Console" order="8" weight="0.32925585" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.53928226" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -444,20 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestPhone.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -479,24 +470,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpunit.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -511,20 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="614">
           <caret line="144" column="9" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Encrypter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -556,23 +519,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/EncryptableTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="100" selection-start-line="100" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="520">
-            <caret line="77" column="3" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="79" />
-            <folding>
-              <element signature="e#28#67#0" expanded="true" />
-            </folding>
+          <first_editor relative-caret-position="84">
+            <caret line="61" column="75" lean-forward="true" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="76" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Encrypter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestPhone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/EncryptableTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>

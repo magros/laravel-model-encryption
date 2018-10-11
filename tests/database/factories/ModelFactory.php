@@ -1,5 +1,5 @@
 <?php
-use Tests\TestUser as User;
+use Magros\Encryptable\Tests\TestUser as User;
 
 $factory->define(User::class, function (Faker\Generator $faker) use ($factory){
     return [

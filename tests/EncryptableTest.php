@@ -1,5 +1,5 @@
 <?php
-namespace Tests;
+namespace Magros\Encryptable\Tests;
 use Illuminate\Support\Facades\DB;
 
 class EncryptableTest extends TestCase {

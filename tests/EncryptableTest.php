@@ -178,4 +178,24 @@ class EncryptableTest extends TestCase {
 
         TestUser::$enableEncryption = true;
     }
+
+    /**
+     * @test
+    */
+    public function it_test_that_encrypted_value_is_stored_in_lower_case()
+    {
+        $email = 'Jhon@DOE.com';
+        $user = $this->createUser('Jhon Doe', $email);
+
+        $this->assertEquals($user->email, strtolower($email));
+    }
+
+    /**
+     * @test
+     */
+    public function it_test_that_where_query_is_working_with_non_lowercase_values()
+    {
+        $this->createUser();
+        $this->assertNotNull(TestUser::where('email','JhOn@DoE.cOm')->first());
+    }
 }

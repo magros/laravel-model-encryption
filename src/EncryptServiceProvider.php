@@ -50,7 +50,7 @@ class EncryptServiceProvider extends ServiceProvider
         $encrypter = new Encrypter();
 
         $countRecords = function ($table, $column, $value) use ($encrypter) {
-            $value = $encrypter->encrypt($value);
+            $value = $encrypter->encrypt(strtolower($value));
             return DB::table($table)->where($column, $value)->count();
         };
 

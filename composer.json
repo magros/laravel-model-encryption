@@ -1,6 +1,6 @@
 {
     "name": "magros/laravel-model-encryption",
-    "description": "",
+    "description": "A trait to encrypt data models in Laravel, automatically encrypt and decrypt model data overriding getAttribute an setAttribute methods of Eloquent Model.",
     "keywords": ["encrypt", "laravel", "laravel 5", "eloquent", "model"],
     "license": "MIT",
     "autoload": {

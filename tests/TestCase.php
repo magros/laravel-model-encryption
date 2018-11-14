@@ -39,7 +39,7 @@ class TestCase extends BaseTestCase
         return $user->load('phones');
     }
 
-    public function createUser($name = 'Jhon Doe', $email = 'jhon@doe.com') : TestUser
+    public function createUser($name = 'jhon doe', $email = 'jhon@doe.com') : TestUser
     {
         return factory(TestUser::class)->create(compact('name', 'email'));
     }

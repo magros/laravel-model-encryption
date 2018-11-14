@@ -9,7 +9,7 @@ class EncryptableTest extends TestCase {
     */
     public function it_test_if_encryption_decoding_is_working()
     {
-        $name = 'Jhon';
+        $name = 'jhon';
         $email = 'foo@bar.com';
         $phoneNumber = '123456798';
 

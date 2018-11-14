@@ -1,6 +1,8 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/magros/laravel-model-encryption/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/magros/laravel-model-encryption/?branch=master)
 [![Downloads](https://poser.pugx.org/magros/laravel-model-encryption/downloads.svg)](https://packagist.org/packages/magros/laravel-model-encryption)
 [![License](https://poser.pugx.org/magros/laravel-model-encryption/license.svg)](https://packagist.org/packages/magros/laravel-model-encryption)
 [ ![Codeship Build Status](https://app.codeship.com/projects/08e35650-c9f0-0136-121d-22114b8966aa/status?branch=master)](https://app.codeship.com/projects/315063)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/magros/laravel-model-encryption/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 # laravel-model-encryption
 A trait to encrypt data models in Laravel, this automatically encrypt and decrypt model data overriding getAttribute an setAttribute methods of Eloquent Model.

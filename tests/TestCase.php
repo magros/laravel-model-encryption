@@ -1,6 +1,7 @@
 <?php
 
-namespace Tests;
+namespace Magros\Encryptable\Tests;
+
 
 use Magros\Encryptable\EncryptServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;

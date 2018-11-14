@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Magros\Encryptable\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Magros\Encryptable\Encryptable;

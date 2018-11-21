@@ -119,10 +119,7 @@ trait Encryptable
     public function newBaseQueryBuilder()
     {
         $connection = $this->getConnection();
-
-//        if(! method_exists($this, 'encryptable')){
-//            dd($this);
-//        }
+        
         return new EncryptableQueryBuilder($connection, $this);
     }
 }

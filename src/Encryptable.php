@@ -120,6 +120,9 @@ trait Encryptable
     {
         $connection = $this->getConnection();
 
+//        if(! method_exists($this, 'encryptable')){
+//            dd($this);
+//        }
         return new EncryptableQueryBuilder($connection, $this);
     }
 }

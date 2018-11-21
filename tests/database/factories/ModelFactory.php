@@ -1,5 +1,6 @@
 <?php
 use Magros\Encryptable\Tests\TestUser as User;
+use Magros\Encryptable\Tests\TestSocialNetwork as SocialNetwork;
 
 $factory->define(User::class, function (Faker\Generator $faker) use ($factory){
     return [
@@ -9,3 +10,8 @@ $factory->define(User::class, function (Faker\Generator $faker) use ($factory){
     ];
 });
 
+$factory->define(SocialNetwork::class, function (Faker\Generator $faker) use ($factory){
+    return [
+        'name' => $faker->word
+    ];
+});

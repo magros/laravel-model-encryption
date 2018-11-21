@@ -24,15 +24,17 @@ class EncryptableQueryBuilder extends Builder {
      * @param null $operator
      * @param null $value
      * @param string $boolean
-     * @return Builder|void
+     * @return Builder
      * @throws \Exception
      */
     public function where($column, $operator = null, $value = null, $boolean = 'and')
     {
-        if ($this->model->encryptable($column)) {
+        if (method_exists($this->model, 'encryptable') && $this->model->encryptable($column)) {
             list($value, $operator) = $this->prepareValueAndOperator($value, $operator, func_num_args() === 2);
             $value = $this->model->encryptAttribute($value);
         }
-        parent::where($column, $operator, $value, $boolean);
+
+        return parent::where($column, $operator, $value, $boolean);
+
     }
 }

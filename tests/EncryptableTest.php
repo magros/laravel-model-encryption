@@ -198,4 +198,21 @@ class EncryptableTest extends TestCase {
         $this->createUser();
         $this->assertNotNull(TestUser::where('email','JhOn@DoE.cOm')->first());
     }
+
+    /**
+     * @test
+     */
+    public function it_test_that_detaching_encrypted_models_is_working()
+    {
+        $user = $this->createUser();
+        $network = factory(TestSocialNetwork::class)->create();
+
+        $network->users()->attach($user->id);
+
+        $this->assertNotEmpty($network->users()->get());
+
+        $network->users()->detach();
+
+        $this->assertEmpty($network->users()->get());
+    }
 }

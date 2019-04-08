@@ -9,7 +9,7 @@ class EncryptableTest extends TestCase {
     */
     public function it_test_if_encryption_decoding_is_working()
     {
-        $name = 'jhon';
+        $name = 'Jhon';
         $email = 'foo@bar.com';
         $phoneNumber = '123456798';
 
@@ -173,8 +173,9 @@ class EncryptableTest extends TestCase {
         $this->artisan('encryptable:decryptModel', ['model' => TestUser::class]);
         $raw = DB::table('test_users')->select('*')->first();
 
+
         $this->assertEquals($user->email, $raw->email);
-        $this->assertEquals($user->name, $raw->name);
+        $this->assertEquals(strtolower($user->name), $raw->name);
 
         TestUser::$enableEncryption = true;
     }
@@ -214,5 +215,16 @@ class EncryptableTest extends TestCase {
         $network->users()->detach();
 
         $this->assertEmpty($network->users()->get());
+    }
+
+    /**
+     * @test
+    */
+    public function it_test_that_convert_to_camelcase_is_working()
+    {
+        $user = $this->createUser('Jhon Doe');
+
+        $this->assertEquals($user->name, 'Jhon Doe');
+        $this->assertEquals($user->toArray()['name'], 'Jhon Doe');
     }
 }

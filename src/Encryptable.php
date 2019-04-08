@@ -39,6 +39,15 @@ trait Encryptable
     }
 
     /**
+     * @param $key
+     * @return bool
+     */
+    public function isCamelcase($key)
+    {
+        return isset($this->camelcase) && is_array($this->camelcase) && in_array($key, $this->camelcase);
+    }
+
+    /**
      * Decrypt a value.
      *
      * @param $value
@@ -51,6 +60,14 @@ trait Encryptable
        return $value ? $this->encrypter()->decrypt($value) : '';
     }
 
+    /**
+     * @param $value
+     * @return string
+     */
+    public function camelCaseAttribute($value)
+    {
+        return ucwords($value);
+    }
 
     /**
      * @param $value
@@ -72,9 +89,12 @@ trait Encryptable
         $value = parent::getAttribute($key);
 
         if ($this->encryptable($key)) {
-
             $value = $this->decryptAttribute($value);
         }
+        if ($this->isCamelcase($key)){
+            $value = $this->camelCaseAttribute($value);
+        }
+
 
         return $value;
     }
@@ -107,6 +127,9 @@ trait Encryptable
         foreach ($attributes as $key => $attribute) {
             if ($this->encryptable($key)) {
                 $attributes[$key] = $this->decryptAttribute($attribute);
+            }
+            if ($this->isCamelcase($key)){
+                $attributes[$key] = $this->camelCaseAttribute($attributes[$key]);
             }
         }
 

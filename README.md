@@ -60,7 +60,14 @@ Publish configuration file, this will create config/encrypt.php
          *
          * @var array
          */
-        protected $encryptable = [ 'email', 'address' ];
+        protected $encryptable = [ 'email', 'address' , 'name'];
+     
+        /**
+        * Optionally you can define the attributes that should be converted to camelcase when retrieve.
+        *
+        * @var array
+        */
+         protected $camelcase = ['name'];
     }
     ```
 5. Optional. Encrypt your current data

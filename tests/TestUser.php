@@ -11,6 +11,7 @@ class TestUser extends Model
 
     protected $fillable = ['email', 'name', 'password'];
     protected $encryptable = ['email', 'name'];
+    protected $camelcase = ['name'];
 
     public function phones()
     {

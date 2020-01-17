@@ -9,7 +9,7 @@ A trait to encrypt data models in Laravel, this automatically encrypt and decryp
 ## How to install
 Run composer installation
 ```bash
-    composer install magros/laravel-model-encryption
+    composer require magros/laravel-model-encryption
 ```
     
 Add ServiceProvider to your app/config.php file

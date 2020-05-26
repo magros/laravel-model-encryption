@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class EncryptModel extends Command
 {
@@ -68,7 +69,7 @@ class EncryptModel extends Command
 
         foreach ($this->attributes as $attribute) {
             $raw = $record->{$attribute};
-            if (!str_contains($raw, $record->encrypter()->getPrefix())) {
+            if (!Str::contains($raw, $record->encrypter()->getPrefix())) {
                 $encryptedFields[$attribute] = $this->model->encryptAttribute($raw);
             }
         }

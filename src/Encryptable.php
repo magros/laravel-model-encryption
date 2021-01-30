@@ -5,17 +5,17 @@ trait Encryptable
 
     public $aesKey = null;
     public static $enableEncryption = true;
-    private $encrypter;
+    private $magrosEncrypter;
 
     /**
      * @return Encrypter
      */
     public function encrypter()
     {
-        if(! $this->encrypter){
-            $this->encrypter = new Encrypter();
+        if(! $this->magrosEncrypter){
+            $this->magrosEncrypter = new Encrypter();
         }
-        return $this->encrypter;
+        return $this->magrosEncrypter;
     }
 
     /**

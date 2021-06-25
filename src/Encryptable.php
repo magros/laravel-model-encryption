@@ -57,7 +57,11 @@ trait Encryptable
      */
     public function decryptAttribute($value)
     {
-        return $value ? ($this->encrypter()->decrypt($value) ? $this->encrypter()->decrypt($value) : $value) : '';
+        if($value) {
+            return $this->encrypter()->decrypt($value) ?: $value;
+        }
+
+        return '';
     }
 
     /**
